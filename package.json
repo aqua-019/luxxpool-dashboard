@@ -5,7 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:public": "VITE_SITE=public vite",
+    "dev:miner": "VITE_SITE=miner vite",
     "build": "vite build",
+    "build:public": "VITE_SITE=public vite build",
+    "build:miner": "VITE_SITE=miner vite build",
+    "build:all": "npm run build && npm run build:public && npm run build:miner",
     "preview": "vite preview"
   },
   "dependencies": {
